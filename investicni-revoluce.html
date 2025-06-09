@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investiční Revoluce 2025 | DoDi Events</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Custom styles to enhance Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            overflow-x: hidden; /* Prevents horizontal scrollbar caused by animations */
+        }
+        
+        /* --- Parallax a Hero sekce --- */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%; /* Extra height to allow for parallax movement */
+            background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('https://placehold.co/1920x1080/1a202c/3b82f6?text=Investice');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* --- Vylepšení designu s přechody (Gradienty) --- */
+        .accent-gradient-text {
+            background: linear-gradient(to right, #4f46e5, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .btn-primary {
+            @apply text-white font-bold rounded-lg transition-all duration-300 transform;
+            background: linear-gradient(to right, #3b82f6, #6366f1);
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+        }
+        /* UPRAVENO: Větší a výraznější nadpisy sekcí */
+        .section-title {
+            @apply text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tight;
+        }
+
+        /* --- Animace při skrolování --- */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* --- Vylepšení pro FAQ akordeon --- */
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary:after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            float: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        details[open] summary:after {
+            transform: rotate(180deg);
+        }
+        h2 {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Wrapper -->
+    <div class="w-full">
+
+        <!-- ======================================= -->
+        <!-- 1. Hero Sekce s Parallax efektem -->
+        <!-- ======================================= -->
+        <section id="home" class="hero-section min-h-screen flex items-center justify-center text-center p-6 relative">
+            <div class="hero-bg"></div>
+            <div class="max-w-4xl z-10 animate-on-scroll">
+                <div class="mb-6">
+                    <span class="text-blue-400 font-bold tracking-widest">26. 7. 2025 | PRAHA, O2 UNIVERSUM</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter mb-4">
+                    INVESTIČNÍ <span class="accent-gradient-text">REVOLUCE</span> 2025
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                    Přestaňte tápat. Získejte strategie, které skutečně fungují a nastartujte svou cestu k finanční nezávislosti.
+                </p>
+                <!-- UPRAVENO: Větší tlačítko v Hero sekci -->
+                <a href="#tickets" class="btn-primary text-xl py-5 px-10">
+                    KOUPIT VSTUPENKU
+                </a>
+            </div>
+        </section>
+
+        <!-- Následující sekce mají přidanou třídu "animate-on-scroll" pro animaci -->
+        
+        <!-- ======================================= -->
+        <!-- 2. Problém a řešení Sekce -->
+        <!-- ======================================= -->
+        <section id="problem" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6 max-w-4xl text-center animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Už vás nebaví obecné konference, které váš život nikam neposunou?
+                </h2>
+                <p class="text-lg text-gray-400">
+                    Všimli jsme si, že na trhu chybí akce, kde potkáte lidi na stejné vlně a získáte skutečně hodnotné know-how. Proto jsme vytvořili event, který se zaměřuje na praktické investiční strategie a budování smysluplných kontaktů.
+                </p>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 3. O eventu Sekce (Co získáte?) -->
+        <!-- ======================================= -->
+        <section id="benefits" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Co si z akce <span class="accent-gradient-text">odnesete?</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Karty mají nyní také animaci -->
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
+                        <i class="fas fa-chart-line text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Konkrétní investiční strategie</h3>
+                        <p class="text-gray-400">Od akcií, přes kryptoměny až po nemovitosti. Žádné obecné řeči, jen praxe.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="transition-delay: 100ms;">
+                        <i class="fas fa-users text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Networking s profesionály</h3>
+                        <p class="text-gray-400">Seznamte se s řečníky i ostatními účastníky, kteří to s investicemi myslí vážně.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="transition-delay: 200ms;">
+                        <i class="fas fa-tools text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Praktické workshopy</h3>
+                        <p class="text-gray-400">Naučte se analyzovat trh, řídit rizika a používat nástroje jako profík.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
+                        <i class="fas fa-file-alt text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Exkluzivní materiály</h3>
+                        <p class="text-gray-400">Získejte přístup k prezentacím, checklistům a bonusovým obsahům po akci.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="transition-delay: 100ms;">
+                        <i class="fas fa-brain text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Osobní růst</h3>
+                        <p class="text-gray-400">Posuňte své finanční myšlení na novou úroveň a získejte sebevědomí pro další kroky.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="transition-delay: 200ms;">
+                        <i class="fas fa-glass-cheers text-4xl accent-gradient-text mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Nezapomenutelná atmosféra</h3>
+                        <p class="text-gray-400">Energii a motivaci, kterou načerpáte, jen tak někde nenajdete. Těšte se na skvělý den.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 4. Řečníci Sekce -->
+        <!-- ======================================= -->
+        <section id="speakers" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Kdo vás to <span class="accent-gradient-text">naučí?</span></h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-800 rounded-xl overflow-hidden text-center transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                        <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Řečník+1" alt="Fotografie řečníka 1" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Jméno Řečníka 1</h3>
+                            <p class="accent-gradient-text font-semibold mb-2">Expert na akcie</p>
+                            <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, arcu ut rhoncus.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden text-center transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll" style="transition-delay: 100ms;">
+                        <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Řečník+2" alt="Fotografie řečníka 2" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Jméno Řečníka 2</h3>
+                            <p class="accent-gradient-text font-semibold mb-2">Investorka do nemovitostí</p>
+                            <p class="text-gray-400 text-sm">Vivamus lacinia odio vitae vestibulum. Donec in efficitur ipsum, in egestas enim.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden text-center transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll" style="transition-delay: 200ms;">
+                        <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Řečník+3" alt="Fotografie řečníka 3" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Jméno Řečníka 3</h3>
+                            <p class="accent-gradient-text font-semibold mb-2">Specialista na krypto</p>
+                            <p class="text-gray-400 text-sm">Nulla et sapien eu justo ullamcorper molestie. Aliquam erat volutpat fusce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 5. Harmonogram Sekce -->
+        <!-- ======================================= -->
+        <section id="schedule" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Harmonogram <span class="accent-gradient-text">akce</span></h2>
+                <div class="max-w-3xl mx-auto animate-on-scroll">
+                    <div class="relative border-l-2 border-blue-600 space-y-12 pl-10">
+                        <div class="relative">
+                            <div class="absolute -left-[48px] top-1.5 h-6 w-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
+                            <p class="text-blue-400 font-bold">09:00 - 10:00</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Registrace a ranní káva</h3>
+                            <p class="text-gray-400">Přijďte včas, zaregistrujte se a nalaďte se na den plný inspirace u šálku skvělé kávy.</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[48px] top-1.5 h-6 w-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
+                            <p class="text-blue-400 font-bold">10:00 - 10:15</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Zahájení (DoDi Events)</h3>
+                             <p class="text-gray-400">Oficiální přivítání a představení vize celého dne.</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[48px] top-1.5 h-6 w-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
+                            <p class="text-blue-400 font-bold">10:15 - 11:30</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Keynote: Budoucnost investic (Jméno Řečníka 1)</h3>
+                             <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[48px] top-1.5 h-6 w-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
+                            <p class="text-blue-400 font-bold">12:30 - 14:00</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Oběd a networking</h3>
+                             <p class="text-gray-400">Vynikající jídlo a skvělá příležitost pro navázání nových kontaktů.</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[48px] top-1.5 h-6 w-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
+                            <p class="text-blue-400 font-bold">18:00</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Závěrečný networking a zakončení</h3>
+                             <p class="text-gray-400">Volná diskuze, drinky a poslední šance vyměnit si kontakty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 6. O nás Sekce (DoDi Events) -->
+        <!-- ======================================= -->
+        <section id="about" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12 max-w-5xl animate-on-scroll">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-black mb-4">Kdo za tím <span class="accent-gradient-text">stojí?</span></h2>
+                    <div class="text-3xl font-bold text-white mb-4">DoDi Events</div>
+                    <p class="text-gray-400">Ahoj! Jsme Dodi Events – organizace, která se řídí poptávkou. Jsme vzdělávací a networkingová organizace... Naším cílem není primárně zisk, ale kvalita a hodnota, kterou předáváme dál.</p>
+                </div>
+                 <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/111827/4f46e5?text=DoDi+Team" alt="Tým DoDi Events" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
+        
+        <!-- ======================================= -->
+        <!-- 7. Vstupenky Sekce -->
+        <!-- ======================================= -->
+        <section id="tickets" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 max-w-2xl animate-on-scroll">
+                 <h2 class="section-title text-4xl md:text-5xl font-black mb-4">Zajistěte si <span class="accent-gradient-text">své místo</span></h2>
+                 <div class="bg-gray-800 border-2 border-blue-600 rounded-2xl p-8 md:p-12 text-center shadow-2xl shadow-blue-600/20"
+                      style="background: radial-gradient(circle, rgba(23, 37, 84, 0.3) 0%, rgba(10,10,10,0) 70%), #1f2937;">
+                    <h3 class="text-3xl font-bold text-white">Standardní vstupenka</h3>
+                    <p class="text-5xl font-black text-white my-6">2.490 <span class="text-3xl font-bold text-gray-400">Kč</span></p>
+                    <ul class="text-gray-300 space-y-3 mb-8">
+                        <li class="flex items-center justify-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Vstup na všechny přednášky a workshopy</li>
+                        <li class="flex items-center justify-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Celodenní občerstvení a oběd</li>
+                        <li class="flex items-center justify-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Přístup k exkluzivním materiálům</li>
+                        <li class="flex items-center justify-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Možnost networkingu s profesionály</li>
+                    </ul>
+                    <a href="#" class="btn-primary py-4 px-8 text-lg w-full block">
+                        KOUPIT VSTUPENKU PŘES STRIPE
+                    </a>
+                    <p class="text-xs text-gray-500 mt-4">Budete přesměrováni na bezpečnou platební bránu Stripe.</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 8. FAQ Sekce -->
+        <!-- ======================================= -->
+        <section id="faq" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6 max-w-3xl animate-on-scroll">
+                <h2 class="section-title text-4xl md:text-5xl font-black mb-4">Často kladené <span class="accent-gradient-text">otázky</span></h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-800 p-6 rounded-lg">
+                        <summary class="font-bold text-lg text-white">Bude na místě zajištěno občerstvení?</summary>
+                        <p class="text-gray-400 mt-4">Ano, v ceně vstupenky je zahrnuta ranní káva, celodenní drobné občerstvení, nápoje a plnohodnotný oběd.</p>
+                    </details>
+                    <details class="bg-gray-800 p-6 rounded-lg">
+                        <summary class="font-bold text-lg text-white">Jaký je doporučený dress code?</summary>
+                        <p class="text-gray-400 mt-4">Doporučujeme styl "business casual". Cílem je, abyste se cítili pohodlně, ale zároveň profesionálně pro networking.</p>
+                    </details>
+                    <details class="bg-gray-800 p-6 rounded-lg">
+                        <summary class="font-bold text-lg text-white">Dostanu po akci záznam nebo prezentace?</summary>
+                        <p class="text-gray-400 mt-4">Ano, všichni účastníci obdrží po skončení eventu email s odkazem na stažení všech prezentací a exkluzivních bonusových materiálů.</p>
+                    </details>
+                    <details class="bg-gray-800 p-6 rounded-lg">
+                        <summary class="font-bold text-lg text-white">Je možné vstupenku stornovat?</summary>
+                        <p class="text-gray-400 mt-4">Storno podmínky naleznete v našich obchodních podmínkách. Vstupenka je však přenosná na jinou osobu.</p>
+                    </details>
+                    <details class="bg-gray-800 p-6 rounded-lg">
+                        <summary class="font-bold text-lg text-white">Je místo konání bezbariérové?</summary>
+                        <p class="text-gray-400 mt-4">Ano, O2 Universum je plně bezbariérové a přístupné pro všechny účastníky.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- 9. Patička -->
+        <!-- ======================================= -->
+        <footer class="bg-black py-12 border-t border-gray-800">
+            <div class="container mx-auto px-6 text-center text-gray-500">
+                <div class="text-2xl font-bold text-white mb-4">DoDi Events</div>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
+                </div>
+                <p class="mb-2">info@dodievents.cz</p>
+                <p class="text-sm">
+                    © 2025 DoDi Events | IČO: 12345678 <br>
+                    <a href="#" class="underline hover:text-white">Obchodní podmínky</a> | <a href="#" class="underline hover:text-white">Ochrana osobních údajů</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript pro animace a parallax -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Parallax efekt ---
+            const heroBg = document.querySelector('.hero-bg');
+            window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                // Pohyb pozadí je pomalejší než skrolování, což vytváří efekt hloubky
+                heroBg.style.transform = `translateY(${scrollY * 0.4}px)`;
+            });
+
+            // --- Animace při skrolování ---
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Když je prvek viditelný, přidá se mu třída .is-visible
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        // Volitelně můžeme přestat sledovat prvek po první animaci
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, {
+                // Spustí animaci, když je viditelných 15% prvku
+                threshold: 0.15,
+            });
+
+            // Sledovat každý prvek určený k animaci
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>

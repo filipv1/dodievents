@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DODI Events | Kvalitní vzdělávací a networkingové akce</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         /* Consistent styles from the landing page */
@@ -65,36 +62,35 @@
 </head>
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- ======================================= -->
-    <!-- Navigace -->
-    <!-- ======================================= -->
     <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-white">DODI <span class="accent-gradient-text">Events</span></a>
+            
             <nav class="hidden md:flex space-x-8 text-lg">
                 <a href="#mission" class="hover:text-blue-400 transition-colors">Naše Mise</a>
                 <a href="#events" class="hover:text-blue-400 transition-colors">Eventy</a>
                 <a href="#gallery" class="hover:text-blue-400 transition-colors">Galerie</a>
                 <a href="#contact" class="hover:text-blue-400 transition-colors">Kontakt</a>
             </nav>
-            <a href="#events" class="hidden md:inline-block bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">Nadcházející akce</a>
+            
+            <div class="hidden md:flex items-center space-x-5">
+                <a href="#events" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap">Nadcházející akce</a>
+                <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+
             <button class="md:hidden text-2xl text-white">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <!-- Wrapper -->
     <div class="w-full">
 
-        <!-- ======================================= -->
-        <!-- 1. Hero Sekce -->
-        <!-- ======================================= -->
         <section class="min-h-[70vh] flex items-center justify-center text-center p-6 relative overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <video autoplay loop muted playsinline class="absolute w-full h-full object-cover z-[-1]">
                 <source src="https://placehold.co/videos/1920x1080.mp4" type="video/mp4">
-                <!-- Fallback background image -->
                 Your browser does not support the video tag.
             </video>
             <div class="max-w-4xl z-10 animate-on-scroll is-visible">
@@ -110,19 +106,13 @@
             </div>
         </section>
 
-        <!-- ======================================= -->
-        <!-- 2. Naše Mise Sekce -->
-        <!-- ======================================= -->
-        
-
-        <section id="mission" class="py-20 md:py-32 bg-black">
+        <section id="mission" class="py-20 bg-black">
             <div class="container mx-auto px-6 max-w-4xl text-center animate-on-scroll">
                 <h2 class="section-title text-4xl md:text-5xl font-black mb-4">Kdo <span class="accent-gradient-text">Jsme</span></h2>
                 <p class="text-lg text-gray-400">
-                    Jsme eventová organizace zaměřená na lidi se zájmem o seberozvoj a/nebo podnikání. Naše akce jsou vzdělávací, praktické a interaktivní. Věříme, že nejlepší způsob, jak si nové znalosti a dovednosti osvojit, je ihned je aplikovat do praxe.
-Klademe velký důraz na networking. Vytváříme prostor, kde se potkávají lidé s podobným smýšlením, hodnotami a ambicemi. Chceme spojovat, inspirovat a posouvat dál – nejen jednotlivce, ale i komunitu.
-Networking je pro nás důležitou součástí. Vytváříme prostor pro stejně smýšlející lidi.
-Reagujeme na časté problémy:
+                    Jsme eventová organizace zaměřená na lidi se zájmem o seberozvoj a/nebo podnikání. Naše akce jsou vzdělávací, praktické a interaktivní. Věříme, že nejlepší způsob, jak si nové znalosti a dovednosti osvojit, je ihned je aplikovat do praxe.</br></br>
+Klademe velký důraz i na networking. Vytváříme prostor, kde se potkávají lidé s podobným smýšlením, hodnotami a ambicemi.
+</br></br>Reagujeme na časté problémy: 
 <ul class="ulik text-gray-400">
     <li>• Nedostatek opravdu kvalitních a zajímavých událostí</li>
     <li>• Nevyvážený poměr cena/výkon</li>
@@ -140,14 +130,10 @@ Reagujeme na časté problémy:
                 </p>
             </div>
         </section>
-        <!-- ======================================= -->
-        <!-- 3. Nadcházející Eventy -->
-        <!-- ======================================= -->
         <section id="events" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Nadcházející <span class="accent-gradient-text">Eventy</span></h2>
                 <div class="flex flex-col md:flex-row justify-center gap-10">
-                    <!-- Event Card 1 -->
                     <div class="bg-gray-800 rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 animate-on-scroll border border-blue-600 shadow-xl shadow-blue-600/10 w-full md:w-1/3">
                         <img src="https://placehold.co/600x400/1a202c/3b82f6?text=Investice" alt="Investiční konference" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -158,28 +144,24 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
                             <a href="investicni-revoluce.html" class="btn-primary py-3 px-6 text-md w-full block text-center">Více informací a vstupenky</a>
                         </div>
                     </div>
-                    <!-- Event Card 2 (Placeholder) -->
-                     <div class="bg-gray-800 rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 animate-on-scroll border border-gray-700 w-full md:w-1/3" style="transition-delay: 100ms;">
-                        <img src="https://placehold.co/600x400/1a202c/eab308?text=Brzy" alt="Marketingová konference" class="w-full h-48 object-cover">
+                    <!-- Toto je komentář
+                    <div class="bg-gray-800 rounded-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 animate-on-scroll border border-gray-700 w-full md:w-1/3" style="transition-delay: 100ms;">
+                        <img src="https://placehold.co/600x400/1a202c/eab308?text=" alt="Marketingová konference" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <p class="text-yellow-400 font-bold text-sm">Podzim 2025</p>
                             <h3 class="text-2xl font-bold text-white mt-2 mb-3">Již brzy</h3>
-                            <p class="text-gray-400 text-sm mb-6">Již brzy</p>
+                            <p class="text-gray-400 text-sm mb-6">Nechte se překvapit</p>
                             <span class="bg-gray-700 text-gray-400 font-semibold py-3 px-6 text-md w-full block text-center rounded-lg">Již brzy</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
-
-        <!-- ======================================= -->
-        <!-- 4. Testimonials Sekce -->
-        <!-- ======================================= -->
+<!--
         <section id="testimonials" class="py-20 md:py-32 bg-black">
             <div class="container mx-auto px-6">
                 <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Co o nás říkají <span class="accent-gradient-text">účastníci</span></h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
                     <div class="bg-gray-800 p-8 rounded-xl animate-on-scroll">
                         <p class="text-gray-300 italic">"Konečně akce, která měla hlavu a patu. Žádné omáčky, jen praktické tipy, které jsem hned druhý den použil. Skvělý networking!"</p>
                         <div class="flex items-center mt-6">
@@ -190,8 +172,7 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial 2 -->
-                     <div class="bg-gray-800 p-8 rounded-xl animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="bg-gray-800 p-8 rounded-xl animate-on-scroll" style="transition-delay: 100ms;">
                         <p class="text-gray-300 italic">"Atmosféra byla neuvěřitelná. Potkala jsem spoustu inspirativních lidí a odnesla si novou energii do podnikání. Děkuji DODI Events!"</p>
                         <div class="flex items-center mt-6">
                             <img src="https://placehold.co/100x100/e2e8f0/2d3748?text=J" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
@@ -201,8 +182,7 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial 3 -->
-                     <div class="bg-gray-800 p-8 rounded-xl animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="bg-gray-800 p-8 rounded-xl animate-on-scroll" style="transition-delay: 200ms;">
                         <p class="text-gray-300 italic">"Poměr cena/hodnota je bezkonkurenční. Informace od předních expertů a perfektní organizace. Těším se na další ročník."</p>
                         <div class="flex items-center mt-6">
                             <img src="https://placehold.co/100x100/e2e8f0/2d3748?text=T" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
@@ -216,9 +196,6 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
             </div>
         </section>
 
-        <!-- ======================================= -->
-        <!-- 5. Galerie Sekce -->
-        <!-- ======================================= -->
         <section id="gallery" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <h2 class="section-title animate-on-scroll text-4xl md:text-5xl font-black mb-4">Galerie z našich <span class="accent-gradient-text">akcí</span></h2>
@@ -230,10 +207,7 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
                 </div>
             </div>
         </section>
-
-        <!-- ======================================= -->
-        <!-- 6. CTA (Kontakt) Sekce -->
-        <!-- ======================================= -->
+-->
         <section id="contact" class="py-20 md:py-32 bg-black">
             <div class="container mx-auto px-6 text-center max-w-3xl animate-on-scroll">
                 <h2 class="section-title text-4xl md:text-5xl font-black mb-4">Staňte se součástí naší <span class="accent-gradient-text">komunity</span></h2>
@@ -245,21 +219,17 @@ Jednodenní akce zaměřená na základy investování, která vám umožní ihn
             </div>
         </section>
 
-        <!-- ======================================= -->
-        <!-- 7. Patička -->
-        <!-- ======================================= -->
         <footer class="bg-black py-12 border-t border-gray-800">
             <div class="container mx-auto px-6 text-center text-gray-500">
                 <div class="text-2xl font-bold text-white mb-4">DODI Events</div>
                 <div class="flex justify-center space-x-6 mb-6">
                     <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-linkedin-in text-2xl"></i></a>
                     <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
                 </div>
-                <p class="mb-2">info@DODIevents.cz</p>
+                <p class="mb-2">info@dodievents.cz</p>
                 <p class="text-sm">
-                    © 2025 DODI Events | IČO: 12345678 <br>
-                    <a href="#" class="underline hover:text-white">Obchodní podmínky</a> | <a href="#" class="underline hover:text-white">Ochrana osobních údajů</a>
+                   2025 DODI Events | IČO:  <br>
+                   
                 </p>
             </div>
         </footer>
